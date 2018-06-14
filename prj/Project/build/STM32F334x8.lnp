@@ -27,7 +27,11 @@
 ".\build\main.o"
 ".\build\stm32f30x_it.o"
 ".\build\system_stm32f30x.o"
---library_type=microlib --strict --scatter ".\build\STM32F334x8.sct"
+".\build\dma_uart.o"
+".\build\oled.o"
+".\build\delay.o"
+".\build\adc_key.o"
+--strict --scatter ".\build\STM32F334x8.sct"
 --diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\build\STM32F334x8.map" -o .\build\STM32F334x8.axf
